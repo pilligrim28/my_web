@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Студия разработки программного обеспечения Николаева Александра - веб-приложения и чат-боты">
+    <title>Николаев Александр | Студия разработки ПО</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Главная страница-визитка -->
+    <main class="profile-container">
+        <!-- Шапка с аватаром -->
+        <header class="profile-header">
+            <div class="terminal-bar">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">~/studio</span>
+            </div>
+            <div class="avatar-wrapper">
+                <div class="avatar">
+                    <img src="avatar.jpg" alt="Николаев Александр">
+                </div>
+                <div class="online-badge"></div>
+            </div>
+            <h1 class="profile-name">Николаев Александр</h1>
+            <p class="profile-title">Студия разработки программного обеспечения</p>
+            <p class="profile-description">
+                Создаём веб-приложения и чат-ботов для бизнеса. 
+                Автоматизируем процессы, увеличиваем продажи. 
+                Работаем с ВКонтакте, MAX и Telegram 👇
+            </p>
+        </header>
+
+        <!-- Основные ссылки -->
+        <section class="links-section">
+            <div class="link-item">
+                <a href="#" class="link-card primary" data-modal="lead-magnet">
+                    <span class="link-icon">🎁</span>
+                    <div class="link-content">
+                        <span class="link-title">Бесплатная консультация</span>
+                        <span class="link-subtitle">Обсудим ваш проект</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <a href="#" class="link-card" data-toggle="services">
+                    <span class="link-icon">�</span>
+                    <div class="link-content">
+                        <span class="link-title">Веб-приложения</span>
+                        <span class="link-subtitle">Разработка под ключ</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <div id="services" class="expandable-section hidden">
+                    <h3>Наши услуги</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <h4>🤖 Чат-боты для Telegram</h4>
+                            <p>Автоматизация продаж, поддержки и воронок продаж в Telegram-ботах</p>
+                            <span class="price">от 15 000 ₽</span>
+                        </div>
+                        <div class="service-card">
+                            <h4>💬 Чат-боты ВКонтакте</h4>
+                            <p>Боты для сообществ, автоворонки и интеграции с CRM</p>
+                            <span class="price">от 12 000 ₽</span>
+                        </div>
+                        <div class="service-card">
+                            <h4>🧠 Чат-боты для MAX</h4>
+                            <p>Интеллектуальные боты с AI для платформы MAX</p>
+                            <span class="price">от 18 000 ₽</span>
+                        </div>
+                        <div class="service-card">
+                            <h4>🌐 Веб-приложения</h4>
+                            <p>Разработка SPA, сервисов и платформ под ключ</p>
+                            <span class="price">от 50 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link-item">
+                <a href="#" class="link-card" data-modal="consultation">
+                    <span class="link-icon">�</span>
+                    <div class="link-content">
+                        <span class="link-title">Заказать чат-бота</span>
+                        <span class="link-subtitle">ВК, MAX, Telegram</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <a href="#" class="link-card" data-toggle="cases">
+                    <span class="link-icon">📊</span>
+                    <div class="link-content">
+                        <span class="link-title">Наши проекты</span>
+                        <span class="link-subtitle">Портфолио и результаты</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <div id="cases" class="expandable-section hidden">
+                    <h3>Наши проекты</h3>
+                    <div class="cases-grid">
+                        <div class="case-card">
+                            <div class="case-stat">50+</div>
+                            <p>Чат-ботов запущено для бизнеса</p>
+                        </div>
+                        <div class="case-card">
+                            <div class="case-stat">3x</div>
+                            <p>Рост конверсии с ботами</p>
+                        </div>
+                        <div class="case-card">
+                            <div class="case-stat">24/7</div>
+                            <p>Автоматическая поддержка клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link-item">
+                <a href="#" class="link-card" data-toggle="about">
+                    <span class="link-icon">👤</span>
+                    <div class="link-content">
+                        <span class="link-title">О студии</span>
+                        <span class="link-subtitle">Опыт и экспертиза</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <div id="about" class="expandable-section hidden">
+                    <h3>О студии</h3>
+                    <div class="about-content">
+                        <p><strong>Студия Николаева Александра</strong> — разработка ПО под ключ</p>
+                        <p><strong>50+</strong> успешных проектов</p>
+                        <p><strong>Специализация:</strong> чат-боты ВК, MAX, Telegram</p>
+                        <p><strong>Веб-приложения:</strong> от лендингов до сложных платформ</p>
+                        <p>Индивидуальный подход к каждому клиенту</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Футер -->
+        <footer class="profile-footer">
+            <p>© 2026 Студия Николаева Александра. Все права защищены.</p>
+        </footer>
+    </main>
+
+    <!-- Модальное окно: Лид-магнит (воронка: шаг 1) -->
+    <div id="modal-lead-magnet" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">×</button>
+            
+            <!-- Шаг 1: Предложение -->
+            <div class="funnel-step" data-step="1">
+                <div class="funnel-badge">💡 Бесплатно</div>
+                <h2>Гайд: Как чат-боты увеличивают продажи</h2>
+                <p class="funnel-description">Узнайте, как автоматизировать продажи с помощью ботов ВК, MAX и Telegram</p>
+                
+                <ul class="funnel-benefits">
+                    <li>✅ 7 способов увеличить продажи</li>
+                    <li>✅ Примеры воронок продаж</li>
+                    <li>✅ Кейсы с цифрами и результатами</li>
+                    <li>✅ Чек-лист для запуска бота</li>
+                </ul>
+
+                <button class="btn-primary" data-next-step="2">Получить гайд</button>
+                
+                <p class="funnel-social-proof">Уже скачали <strong>1,247</strong> предпринимателей</p>
+            </div>
+
+            <!-- Шаг 2: Форма захвата -->
+            <div class="funnel-step hidden" data-step="2">
+                <h2>Куда отправить гайд?</h2>
+                <p class="funnel-description">Заполните форму и получите доступ мгновенно</p>
+                
+                <form class="lead-form" data-form="lead-capture">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ваш Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон или Telegram (необязательно)">
+                    </div>
+                    
+                    <label class="checkbox-group">
+                        <input type="checkbox" required>
+                        <span>Согласен на обработку персональных данных</span>
+                    </label>
+                    
+                    <button type="submit" class="btn-primary">Получить гайд</button>
+                </form>
+                
+                <p class="funnel-guarantee">🔒 Ваши данные в безопасности. Никакого спама.</p>
+            </div>
+
+            <!-- Шаг 3: Спасибо + бонус -->
+            <div class="funnel-step hidden" data-step="3">
+                <div class="success-icon">✓</div>
+                <h2>Отлично! Проверьте почту</h2>
+                <p class="funnel-description">Гайд уже в вашем почтовом ящике</p>
+                
+                <div class="bonus-offer">
+                    <h3>🎉 Специальное предложение!</h3>
+                    <p>Запишитесь на бесплатную консультацию — обсудим ваш проект и предложим решение</p>
+                    <button class="btn-primary" data-next-step="4">Записаться на консультацию</button>
+                </div>
+                
+                <button class="btn-secondary modal-close-btn">Закрыть</button>
+            </div>
+
+            <!-- Шаг 4: Запись на консультацию -->
+            <div class="funnel-step hidden" data-step="4">
+                <h2>Запись на консультацию</h2>
+                <p class="funnel-description">Расскажите о вашем проекте — предложим решение</p>
+                
+                <form class="consult-form" data-form="consultation">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="platform" required>
+                            <option value="" disabled selected>Какая платформа интересует?</option>
+                            <option value="telegram">Чат-бот Telegram</option>
+                            <option value="vk">Чат-бот ВКонтакте</option>
+                            <option value="max">Чат-бот MAX</option>
+                            <option value="web">Веб-приложение</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Кратко опишите задачу или идею" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Записаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно: Консультация -->
+    <div id="modal-consultation" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">×</button>
+            
+            <div class="funnel-step" data-step="1">
+                <h2>💬 Заказать чат-бота</h2>
+                <p class="funnel-description">Разработаем бота для ВК, MAX или Telegram под ваши задачи</p>
+                
+                <ul class="funnel-benefits">
+                    <li>✅ Анализ бизнес-процессов</li>
+                    <li>✅ Проектирование воронки</li>
+                    <li>✅ Разработка и тестирование</li>
+                    <li>✅ Запуск и поддержка</li>
+                </ul>
+
+                <form class="consult-form" data-form="consult-quick">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="platform" required>
+                            <option value="" disabled selected>Платформа</option>
+                            <option value="telegram">Telegram</option>
+                            <option value="vk">ВКонтакте</option>
+                            <option value="max">MAX</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Обсудить проект</button>
+                </form>
+                
+                <p class="funnel-guarantee">⚡ Отвечаю в течение 2 часов</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
